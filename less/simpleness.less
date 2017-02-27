@@ -1,0 +1,322 @@
+/*!
+ *  Theme		: Simpleness 
+ *  Description : CV Resume Template by themesforever.com
+ *  Version     : 1.0
+ */
+
+/*!
+ *	Resume styles:
+ *	
+ *	1.	GLOBAL STYLES
+ *
+ *	2.	LAYOUT DESIGN
+ *		2.1	WRAPPER ASIDE / Left		
+ *		2.2	WRAPPER SECTION / Right
+ *
+ *	3.	SOCIAL NAV	
+ *
+ *	4.	HEADER TITLE
+ *
+ *	5.	SECTIONS	
+ *		3.1	SECTION // ABOUT ME
+ *		3.2	SECTION // EXPERIENCES
+ *		3.3	SECTION // EDUCATION
+ *		3.4	SECTION // CONTACT
+ *		3.5	SECTION // HOBBIES
+ *	
+ */
+ 
+@import "variables.less";
+@import "mixins.less";
+
+/*!
+ **********************************************************
+ *
+ *	1.	GLOBAL STYLES
+ *		Defaults HTML and overrides styles Bootstrap
+ *
+ **********************************************************
+ */
+
+body 
+{
+	background: @bg-body;
+	color: @text-color-default;
+	font-family: @sans-serif-font;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 25px
+}
+
+a
+{
+	color: @text-color-default;
+	text-decoration: none;
+	.transition-all;
+
+	&:hover,
+	&:focus
+	{
+		color: @color-primary
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-weight: 700;
+	margin: 0;
+	padding: 0
+}
+
+.text-primary
+{
+	color: @color-primary;
+}
+
+.lead
+{
+	font-size: 25px;
+	margin-bottom: 0
+}
+
+footer {
+	color: @color-negative;
+	font-size: 14px;
+	padding: 0;
+	margin: 15px 0;
+	.text-shadow(.9)
+
+}
+
+.bg-primary
+{
+	background-color: @color-primary
+}
+
+.media
+{
+	margin: 0;
+	margin-bottom: 10px;
+	margin-left: 27px;
+
+	span
+	{
+		@span-size: 30px;
+		color: @color-wrapper;
+		display: block;
+		font-size: 14px;
+		height: @span-size;
+		line-height: @span-size;
+		text-align: center;
+		width: @span-size
+	}
+
+	.media-body
+	{
+		color: @text-color-paragraph;
+		font-size: 16px;
+		line-height: 30px
+	}
+}
+
+.progress
+{
+	background-color: @bg-progress;
+	border-radius: 0;
+	box-shadow: none;
+	height: 25px;
+	line-height: 25px;
+	padding: 0;
+	margin-bottom: 12px;
+
+	.progress-bar
+	{
+		background-color: @color-primary;
+		box-shadow: none;
+		font-size: 17px;
+		line-height: 25px
+	}
+}
+
+hr
+{
+	border-color: fade(@text-color-default,30%)
+}
+
+/*!
+ **********************************************************
+ *
+ *	2.	LAYOUT DESIGN
+ *
+ **********************************************************
+ */
+
+.container
+{
+	max-width: 1024px;
+
+	.wrapper
+	{
+		background-color: @bg-wrapper;
+		border-radius: 8px;
+		box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+		padding: 25px 50px;
+	}
+	@media ( max-width: 600px ) {
+		.wrapper
+		{
+			border-radius: 0;
+			padding: 20px
+		}
+		&
+		{
+			padding: 0
+		}		
+	}
+}
+
+/*!
+ **********************************************************
+ *
+ *	3.	SOCIAL NAV
+ *
+ **********************************************************
+ */
+
+nav
+{
+	margin: 10px 0 3px 0;
+	text-align: right;
+
+	.pager
+	{
+		padding:0;
+		margin: 0;
+		margin-bottom: 6px;
+	
+		a,
+		a:focus {
+			background-color: inherit;
+			border: none;
+			color: @color-negative;
+			font-size: 17px;
+			margin: 5px 12px;
+			padding: 0;
+			.text-shadow(.9);
+			.transition-all;
+
+			&:hover {
+					background-color: inherit !important;
+					color: @color-primary;
+					text-shadow: none
+				}
+		}
+
+	}
+
+}
+
+/*!
+ **********************************************************
+ *
+ *	4.	HEADER TITLE
+ *
+ **********************************************************
+ */
+
+header.main
+{
+	padding: 17px 0;
+	text-align: center;
+
+	h1
+	{
+		font-size: @text-size-title
+	}
+
+	@media ( max-width: 600px ) {
+		h1
+		{
+
+			font-size: @text-size-title * .8
+		}		
+		p
+		{
+			font-size: 22px
+		}		
+	}
+
+	@media ( max-width: 480px ) {
+		h1
+		{
+			font-size: @text-size-title * .65
+		}			
+	}
+
+}
+
+/*!
+ **********************************************************
+ *
+ *	5.	SECTIONS
+ *
+ **********************************************************
+ */
+
+section
+{
+	margin-bottom: 35px;
+
+	@media ( max-width: 767px ) {
+		&
+		{
+			margin-bottom: @margin-bottom * 2
+		}		
+	}
+
+	h3
+	{
+		color: @text-color-default;
+		font-size: @text-size-subtitle;	
+		margin-bottom: @margin-bottom
+	}
+}
+
+article
+{
+	margin-left: 25px;
+
+	p
+	{
+		color: @text-color-paragraph;
+		font-size: @text-size-paragraph
+	}
+
+	img.photo
+	{
+
+		border: 5px solid @bg-wrapper;
+		box-shadow: 0 0 5px 2px #ccc;
+
+		@media ( max-width: 767px ) and ( min-width: 480px ) {
+			&
+			{
+				max-width: 300px;
+				margin: auto
+			}			
+		}
+		@media (max-width: 767px) {
+			&
+			{
+				margin-bottom: @margin-bottom
+			}		
+		}
+	
+	}
+
+}
