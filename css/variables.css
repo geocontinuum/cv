@@ -1,0 +1,9 @@
+/*	Colors default:
+@color-default: #0f1219;
+@color-wrapper: #262b37;
+
+@bg-image-body: "bg-v2";
+//	Font Color
+	@text-color-default: lighten(@color-default, 100%);
+	@text-color-paragraph: lighten(@color-default, 80%);
+*/
