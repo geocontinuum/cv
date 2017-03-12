@@ -56,7 +56,7 @@ $(function(){
 
   $('#block-color span').click(function(){
       var id = $(this).attr('id');
-      $('#color-switch').attr('href', 'css/simpleness-' + id + '.css');
+      $('#color-switch').attr('href', 'css/truth-' + id + '.css');
   });
 
   var toggle = false;
