@@ -43,9 +43,9 @@ body
 	background: @bg-body;
 	color: @text-color-default;
 	font-family: @sans-serif-font;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 25px
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 15px
 }
 
 a
@@ -80,13 +80,13 @@ h6
 
 .lead
 {
-	font-size: 25px;
+	font-size: 20px;
 	margin-bottom: 0
 }
 
 footer {
 	color: @color-negative;
-	font-size: 14px;
+	font-size: 12px;
 	padding: 0;
 	margin: 15px 0;
 	.text-shadow(.9)
@@ -102,14 +102,14 @@ footer {
 {
 	margin: 0;
 	margin-bottom: 10px;
-	margin-left: 27px;
+	margin-left: 23px;
 
 	span
 	{
-		@span-size: 30px;
+		@span-size: 35px;
 		color: @color-wrapper;
 		display: block;
-		font-size: 14px;
+		font-size: 12px;
 		height: @span-size;
 		line-height: @span-size;
 		text-align: center;
@@ -119,8 +119,8 @@ footer {
 	.media-body
 	{
 		color: @text-color-paragraph;
-		font-size: 16px;
-		line-height: 30px
+		font-size: 12px;
+		line-height: 25px
 	}
 }
 
@@ -129,8 +129,8 @@ footer {
 	background-color: @bg-progress;
 	border-radius: 0;
 	box-shadow: none;
-	height: 25px;
-	line-height: 25px;
+	height: 15px;
+	line-height: 15px;
 	padding: 0;
 	margin-bottom: 12px;
 
@@ -138,8 +138,8 @@ footer {
 	{
 		background-color: @color-primary;
 		box-shadow: none;
-		font-size: 17px;
-		line-height: 25px
+		font-size: 14px;
+		line-height: 20px
 	}
 }
 
@@ -204,7 +204,7 @@ nav
 			background-color: inherit;
 			border: none;
 			color: @color-negative;
-			font-size: 17px;
+			font-size: 12px;
 			margin: 5px 12px;
 			padding: 0;
 			.text-shadow(.9);
@@ -243,7 +243,7 @@ header.main
 		h1
 		{
 
-			font-size: @text-size-title * .8
+			font-size: @text-size-title * .45
 		}		
 		p
 		{
@@ -254,7 +254,7 @@ header.main
 	@media ( max-width: 480px ) {
 		h1
 		{
-			font-size: @text-size-title * .65
+			font-size: @text-size-title * .25
 		}			
 	}
 
@@ -303,14 +303,14 @@ article
 		border: 5px solid @bg-wrapper;
 		box-shadow: 0 0 5px 2px #ccc;
 
-		@media ( max-width: 767px ) and ( min-width: 480px ) {
+		@media ( max-width: 780px ) and ( min-width: 480px ) {
 			&
 			{
 				max-width: 300px;
 				margin: auto
 			}			
 		}
-		@media (max-width: 767px) {
+		@media (max-width: 780px) {
 			&
 			{
 				margin-bottom: @margin-bottom
