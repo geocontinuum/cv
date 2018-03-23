@@ -1,0 +1,63 @@
+/*!
+ *  Theme		: Tristan CV
+ *  Description : CV tristan.org
+ *  Version     : 1.2
+ */
+/*!
+ *	Resume styles:
+ *	
+ *	1.	GLOBAL STYLES
+ *
+ *	2.	LAYOUT DESIGN
+ *		2.1	WRAPPER ASIDE / Left		
+ *		2.2	WRAPPER SECTION / Right
+ *
+ *	3.	SOCIAL NAV	
+ *
+ *	4.	HEADER TITLE
+ *
+ *	5.	SECTIONS	
+ *		3.1	SECTION // ABOUT ME
+ *		3.2	SECTION // EXPERIENCES
+ *		3.3	SECTION // EDUCATION
+ *		3.4	SECTION // CONTACT
+ *		3.5	SECTION // HOBBIES
+ *	
+ */
+/*!
+ **********************************************************
+ *
+ *	1.	GLOBAL STYLES
+ *		Defaults HTML and overrides styles Bootstrap
+ *
+ **********************************************************
+ */body{background:#0f1219 url("../img/bg-v2.png") repeat 0 0;color:#ffffff;font-family:"Helvetica Neue", Arial, sans-serif;font-size:16px;font-weight:300;line-height:18px}a{color:#ffffff;text-decoration:none;-webkit-transition:all 0.35s;transition:all 0.35s}a:focus,a:hover{color:#099}h1,h2,h3,h4,h5,h6{font-weight:400;margin:0;padding:0}.text-primary{color:#099}.lead{font-size:18px;margin-bottom:0}footer{color:#ffffff;font-size:14px;padding:0;margin:15px 0;text-shadow:0 1px rgba(0, 0, 0, .9)}.bg-primary{background-color:#099}.media{margin:0;margin-bottom:10px;margin-left:23px}.media span{color:#262b37;display:block;font-size:14px;height:24px;line-height:24px;text-align:center;width:24px}.media .media-body{color:#ffffff;font-size:16px;line-height:25px}.progress{background-color:rgba(15, 18, 25, .8);border-radius:22;-webkit-box-shadow:none;box-shadow:none;height:20px;line-height:16px;padding:0;margin-bottom:12px}.progress .progress-bar{background-color:#099;-webkit-box-shadow:none;box-shadow:none;font-size:14px;line-height:20px}hr{border-color:rgba(255, 255, 255, .3)}
+/*!
+ **********************************************************
+ *
+ *	2.	LAYOUT DESIGN
+ *
+ **********************************************************
+ */.container{max-width:1024px}.container .wrapper{background-color:#262b37;border-radius:8px;-webkit-box-shadow:0 0 5px 5px rgba(0, 0, 0, .1);box-shadow:0 0 5px 5px rgba(0, 0, 0, .1);padding:25px 45px}@media (max-width:600px){.container{padding:0}.container .wrapper{border-radius:0;padding:20px}}
+/*!
+ **********************************************************
+ *
+ *	3.	SOCIAL NAV
+ *
+ **********************************************************
+ */nav{margin:10px 0 3px 0;text-align:right}nav .pager{padding:0;margin:0;margin-bottom:6px}nav .pager a,nav .pager a:focus{background-color:inherit;border:none;color:#ffffff;font-size:14px;margin:5px 12px;padding:0;text-shadow:0 1px rgba(0, 0, 0, .9);-webkit-transition:all 0.35s;transition:all 0.35s}nav .pager a:focus:hover,nav .pager a:hover{background-color:inherit!important;color:#099;text-shadow:none}
+/*!
+ **********************************************************
+ *
+ *	4.	HEADER TITLE
+ *
+ **********************************************************
+ */header.main{padding:14px 0;text-align:center}header.main h1{font-size:40px}@media (max-width:600px){header.main h1{Sfont-size:18px}header.main p{font-size:18px}}@media (max-width:460px){header.main h1{font-size:30px}}
+/*!
+ **********************************************************
+ *
+ *	5.	SECTIONS
+ *
+ **********************************************************
+ */section{margin-bottom:20px}@media (max-width:767px){section{margin-bottom:40px}}section h3{color:#ffffff;font-size:18px;margin-bottom:20px}article{margin-left:25px}article p{color:#ffffff;font-size:16px}article img.photo{border:5px solid #262b37;-webkit-box-shadow:0 0 5px 2px #ccc;box-shadow:0 0 5px 2px #ccc}@media (max-width:780px) and (min-width:260px){article img.photo{max-width:260px;margin:auto}}@media (max-width:780px){article img.photo{margin-bottom:20px}}
+/*# sourceMappingURL=truth-dist.css.map */

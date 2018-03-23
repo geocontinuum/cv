@@ -1,7 +1,7 @@
 /*!
  *  Theme		: Tristan CV
  *  Description : CV tristan.org
- *  Version     : 1.1
+ *  Version     : 1.2
  */
 
 /*!
@@ -43,9 +43,9 @@ body
 	background: @bg-body;
 	color: @text-color-default;
 	font-family: @sans-serif-font;
-	font-size: 14px;
-	font-weight: 200;
-	line-height: 15px
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 18px
 }
 
 a
@@ -68,7 +68,7 @@ h4,
 h5,
 h6
 {
-	font-weight: 700;
+	font-weight: 400;
 	margin: 0;
 	padding: 0
 }
@@ -80,13 +80,13 @@ h6
 
 .lead
 {
-	font-size: 20px;
+	font-size: 18px;
 	margin-bottom: 0
 }
 
 footer {
 	color: @color-negative;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 0;
 	margin: 15px 0;
 	.text-shadow(.9)
@@ -106,10 +106,10 @@ footer {
 
 	span
 	{
-		@span-size: 35px;
+		@span-size: 24px;
 		color: @color-wrapper;
 		display: block;
-		font-size: 12px;
+		font-size: 14px;
 		height: @span-size;
 		line-height: @span-size;
 		text-align: center;
@@ -119,7 +119,7 @@ footer {
 	.media-body
 	{
 		color: @text-color-paragraph;
-		font-size: 12px;
+		font-size: 16px;
 		line-height: 25px
 	}
 }
@@ -127,10 +127,10 @@ footer {
 .progress
 {
 	background-color: @bg-progress;
-	border-radius: 0;
+	border-radius: 22;
 	box-shadow: none;
-	height: 15px;
-	line-height: 15px;
+	height: 20px;
+	line-height: 16px;
 	padding: 0;
 	margin-bottom: 12px;
 
@@ -165,7 +165,7 @@ hr
 		background-color: @bg-wrapper;
 		border-radius: 8px;
 		box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
-		padding: 25px 50px;
+		padding: 25px 45px;
 	}
 	@media ( max-width: 600px ) {
 		.wrapper
@@ -204,7 +204,7 @@ nav
 			background-color: inherit;
 			border: none;
 			color: @color-negative;
-			font-size: 12px;
+			font-size: 14px;
 			margin: 5px 12px;
 			padding: 0;
 			.text-shadow(.9);
@@ -231,7 +231,7 @@ nav
 
 header.main
 {
-	padding: 17px 0;
+	padding: 14px 0;
 	text-align: center;
 
 	h1
@@ -241,20 +241,19 @@ header.main
 
 	@media ( max-width: 600px ) {
 		h1
-		{
-
+		{S
 			font-size: @text-size-title * .45
 		}		
 		p
 		{
-			font-size: 22px
+			font-size: 18px
 		}		
 	}
 
-	@media ( max-width: 480px ) {
+	@media ( max-width: 460px ) {
 		h1
 		{
-			font-size: @text-size-title * .25
+			font-size: @text-size-title * .75
 		}			
 	}
 
@@ -270,7 +269,7 @@ header.main
 
 section
 {
-	margin-bottom: 35px;
+	margin-bottom: 20px;
 
 	@media ( max-width: 767px ) {
 		&
@@ -303,10 +302,10 @@ article
 		border: 5px solid @bg-wrapper;
 		box-shadow: 0 0 5px 2px #ccc;
 
-		@media ( max-width: 780px ) and ( min-width: 480px ) {
+		@media ( max-width: 780px ) and ( min-width: 260px ) {
 			&
 			{
-				max-width: 300px;
+				max-width: 260px;
 				margin: auto
 			}			
 		}

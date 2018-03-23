@@ -36,9 +36,9 @@ body {
   background: #222222 url("../img/bg-v1.png") repeat 0 0;
   color: #222222;
   font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 22px;
 }
 a {
   color: #222222;
@@ -57,15 +57,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  margin: 0;
+  font-weight: 400;
+  margin: 10;
   padding: 0;
 }
 .text-primary {
   color: #009999;
 }
 .lead {
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 0;
 }
 footer {
@@ -86,31 +86,31 @@ footer {
 .media span {
   color: #ffffff;
   display: block;
-  font-size: 14px;
-  height: 30px;
-  line-height: 30px;
+  font-size: 18px;
+  height: 26px;
+  line-height: 26px;
   text-align: center;
-  width: 30px;
+  width: 26px;
 }
 .media .media-body {
   color: rgba(34, 34, 34, 0.8);
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 26px;
 }
 .progress {
   background-color: rgba(34, 34, 34, 0.8);
-  border-radius: 0;
+  border-radius: 12;
   box-shadow: none;
-  height: 25px;
-  line-height: 25px;
+  height: 24px;
+  line-height: 24px;
   padding: 0;
   margin-bottom: 12px;
 }
 .progress .progress-bar {
   background-color: #009999;
   box-shadow: none;
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 24px;
 }
 hr {
   border-color: rgba(34, 34, 34, 0.3);
@@ -129,7 +129,7 @@ hr {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-  padding: 25px 50px;
+  padding: 25px 30px;
 }
 @media (max-width: 600px) {
   .container {
@@ -137,7 +137,7 @@ hr {
   }
   .container .wrapper {
     border-radius: 0;
-    padding: 20px;
+    padding: 10px;
   }
 }
 /*!
@@ -187,11 +187,11 @@ header.main {
   text-align: center;
 }
 header.main h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 @media (max-width: 600px) {
   header.main h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   header.main p {
     font-size: 22px;
@@ -219,8 +219,8 @@ section {
 }
 section h3 {
   color: #222222;
-  font-size: 27px;
-  margin-bottom: 25px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 article {
   margin-left: 25px;
