@@ -1,9 +1,7 @@
-# Permit access to the challenge files but nothing else
-Order allow,deny
 Allow from all
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 SSLOptions +StrictRequire
 SSLRequireSSL
-SSLRequire %{HTTP_HOST} eq "tristan.org"
+SSLRequire %{HTTP_HOST} eq "*.tristan.org"
